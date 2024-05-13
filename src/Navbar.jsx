@@ -123,7 +123,7 @@ const Navbar = ({ onProjectsClick, onContactClick, onAboutmeClick , onTecnologia
             <Link1 onClick={onProjectsClick} target="#">Projects</Link1>
           </Item>
           <Item>
-            <Link1 onClick={onTecnologiasClick} target="#">Tecnologias</Link1>
+            <Link1 onClick={onTecnologiasClick} target="#">Technologies</Link1>
           </Item>
           <Item>
             <Link1 onClick={onContactClick} target="#">Contact</Link1>
@@ -144,7 +144,7 @@ const Navbar = ({ onProjectsClick, onContactClick, onAboutmeClick , onTecnologia
             <Link2 onClick={onProjectsClick} target="#">Projects</Link2>
           </Item>
           <Item>
-            <Link2 onClick={onTecnologiasClick} target="#">Tecnologias</Link2>
+            <Link2 onClick={onTecnologiasClick} target="#">Technologies</Link2>
           </Item>
           <Item>
             <Link2 onClick={onContactClick} target="#">Contact</Link2>

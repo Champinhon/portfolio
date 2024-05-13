@@ -36,6 +36,7 @@ function App() {
   const projectsRef = useRef(null)
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
+  const technologiesRef = useRef(null)
   const handleProjectsClick = () => {
     projectsRef.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -45,6 +46,9 @@ function App() {
   const handleContactClick = () => {
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   }
+  const handleTechnologiesClick = () => {
+    technologiesRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
   const downloadFile = () => {
     window.open('./CV_VICTOR_SALGADO.pdf', '_blank')
   }
@@ -52,7 +56,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <Navbar onProjectsClick={handleProjectsClick} onAboutmeClick={handleAboutClick} onContactClick={handleContactClick}/>
+        <Navbar onProjectsClick={handleProjectsClick} onAboutmeClick={handleAboutClick} onContactClick={handleContactClick} onTecnologiasClick={handleAboutClick}/>
       </div>
       <div className='App-body'> 
         <Subtitle>Hi, I am Víctor Salgado  
@@ -80,7 +84,7 @@ function App() {
         </AboutMe>
       </div>
       <hr></hr>
-      <Subtitle>My Skills</Subtitle>
+      <Subtitle ref={technologiesRef}>My Skills</Subtitle>
       <div className="skills-container">
         <div className="skill">
           <h3>Python</h3>
