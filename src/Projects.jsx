@@ -13,27 +13,28 @@ const ProjectTitle = styled.h3`
 const ProjectDescription = styled.p`
   margin: 10px 0;
 `;
+
 const ProjectImage = styled.img`
-    width: 25%;
-    height: 25%;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-`;
-const ProjectLink = styled.a`
-    color: blue;
-    text-decoration: none;  
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    hover: {
-        text-decoration: underline;
-    }
-    
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 `;
 
+const ProjectLink = styled.a`
+  color: blue;
+  text-decoration: none;  
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 function Project({ title, description, image, link }) {
   return (

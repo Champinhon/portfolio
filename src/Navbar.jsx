@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./navbar.css";
 import styled from "styled-components";
 export const Nav = styled.nav`
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     min-height: 9vh;
     background: white;
     display: flex;
@@ -22,7 +22,7 @@ export const Menu = styled.ul`
   list-style: none;
   display: flex;
 
-  li:nth-child(2) {
+  li {
     margin: 0px 20px;
   }
 
@@ -108,7 +108,7 @@ export const OverlayMenu = styled.ul`
     margin: 50px 0px;
   }
 `;
-const Navbar = ({ onProjectsClick, onContactClick, onAboutmeClick }) => {
+const Navbar = ({ onProjectsClick, onContactClick, onAboutmeClick , onTecnologiasClick}) => {
   const [toggle, toggleNav] = useState(false);
   const text = "<Víctor Salgado/>";
   return (
@@ -121,6 +121,9 @@ const Navbar = ({ onProjectsClick, onContactClick, onAboutmeClick }) => {
           </Item>
           <Item>
             <Link1 onClick={onProjectsClick} target="#">Projects</Link1>
+          </Item>
+          <Item>
+            <Link1 onClick={onTecnologiasClick} target="#">Tecnologias</Link1>
           </Item>
           <Item>
             <Link1 onClick={onContactClick} target="#">Contact</Link1>
@@ -139,6 +142,9 @@ const Navbar = ({ onProjectsClick, onContactClick, onAboutmeClick }) => {
           </Item>
           <Item>
             <Link2 onClick={onProjectsClick} target="#">Projects</Link2>
+          </Item>
+          <Item>
+            <Link2 onClick={onTecnologiasClick} target="#">Tecnologias</Link2>
           </Item>
           <Item>
             <Link2 onClick={onContactClick} target="#">Contact</Link2>
